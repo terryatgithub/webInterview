@@ -1,0 +1,16 @@
+<div class="foo">
+    <h1>Page Foo</h1>
+    <a href="javascript:" class="foo__gobar">goto /bar</a>
+
+    <p>
+        <!-- 小于10k的图片，img标签的src被编译为 Data URI格式 -->
+        <!-- <img src="data:image/png;base64:,xxxxxxxxxxxxxxxx" alt=""> -->
+        <img src="smallpic.png" alt="smallpic">
+    </p>
+
+    <p>
+        <!-- 大于10k的图片，图片会被储存到输出目录，src会被替换为打包后的路径 -->
+        <!-- <img src="/assets/xxxxxxxxxxxxx.png" alt=""> -->
+        <img src="largepic.png" alt="largepic">
+    </p>
+</div>
